@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="7dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/texttitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="0.8"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/textcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1.2"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:weightSum="2">
+
+
+                    <ImageView
+                        android:id="@+id/eye"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/eye" />
+
+                    <TextView
+                        android:id="@+id/texViews"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="455"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:weightSum="2">
+
+
+                    <ImageView
+                        android:id="@+id/like"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/heart" />
+
+                    <!--                    <ImageView-->
+                    <!--                        android:id="@+id/unlike"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:layout_margin="12dp"-->
+                    <!--                        android:layout_weight="1"-->
+                    <!--                        android:src="@drawable/heart"-->
+                    <!--                        android:visibility="gone" />-->
+
+                    <TextView
+                        android:id="@+id/textlikes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="455"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:weightSum="2">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="14dp"
+                        android:layout_weight="1.2"
+                        android:src="@drawable/recbin" />
+
+                    <TextView
+                        android:id="@+id/delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:text="DELETE"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#F3F3F3"
+    android:orientation="vertical"
+    tools:context=".Activity.WatchLetterActivity">
+
+    <TextView
+        android:id="@+id/noDataFoundTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Data Found"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/watchLaterRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp"
+        tools:listitem="@layout/itemview_watch_later" />
+
+</RelativeLayout>
